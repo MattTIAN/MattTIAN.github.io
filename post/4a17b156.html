@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hello World | Matthew Tian</title><meta name="keywords" content="Blog"><meta name="author" content="Matthew Tian"><meta name="copyright" content="Matthew Tian"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Mac下使用GitHub+Hexo搭建个人博客开始之前需要在电脑上安装好Git和node.js，Mac上可以使用Homebrew命令行工具来安装Git和node.js 安装Homebrew在命令行工具输入以下命令，如果已经安装过Homebrew可以忽略 1&#x2F;usr&#x2F;bin&#x2F;ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Ho">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://matttian.github.io/post/4a17b156.html">
+<meta property="og:site_name" content="Matthew Tian">
+<meta property="og:description" content="Mac下使用GitHub+Hexo搭建个人博客开始之前需要在电脑上安装好Git和node.js，Mac上可以使用Homebrew命令行工具来安装Git和node.js 安装Homebrew在命令行工具输入以下命令，如果已经安装过Homebrew可以忽略 1&#x2F;usr&#x2F;bin&#x2F;ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Ho">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1024/book1.png">
+<meta property="article:published_time" content="2022-08-06T10:43:49.749Z">
+<meta property="article:modified_time" content="2022-08-07T11:08:49.386Z">
+<meta property="article:author" content="Matthew Tian">
+<meta property="article:tag" content="Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1024/book1.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://matttian.github.io/post/4a17b156"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello World',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-07 21:08:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1024/book1.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Matthew Tian</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hello World</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-08-06T10:43:49.749Z" title="Created 2022-08-06 20:43:49">2022-08-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-08-07T11:08:49.386Z" title="Updated 2022-08-07 21:08:49">2022-08-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>4min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hello World"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Mac下使用GitHub-Hexo搭建个人博客"><a href="#Mac下使用GitHub-Hexo搭建个人博客" class="headerlink" title="Mac下使用GitHub+Hexo搭建个人博客"></a>Mac下使用GitHub+Hexo搭建个人博客</h1><p>开始之前需要在电脑上安装好<a target="_blank" rel="noopener" href="https://link.segmentfault.com/?enc=MkH855+0r2lXVk2lTZIbUg==.i6aaj7dWo1NX0M860yHMsn4+wLbhZgcrTM1csLb9FqU=">Git</a>和<a target="_blank" rel="noopener" href="https://link.segmentfault.com/?enc=PGhUFJVxJ1Ix/YEk6Em88w==.t30cVbsAJ0zJapmnQRSTFbOi+dclwiAoSL6Dm85NTiA=">node.js</a>，Mac上可以使用Homebrew命令行工具来安装Git和node.js</p>
+<h2 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a><strong>安装Homebrew</strong></h2><p>在命令行工具输入以下命令，如果已经安装过Homebrew可以忽略</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Homebrew-安装-node-js"><a href="#Homebrew-安装-node-js" class="headerlink" title="Homebrew 安装 node.js"></a><strong>Homebrew 安装 node.js</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+
+<p>安装后可以使用命令来检查是否安装成功</p>
+<p>检查node</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<p>v12.14.1</p>
+<p>检查<a target="_blank" rel="noopener" href="https://link.segmentfault.com/?enc=Hi/TRPteA2OvDkMwPpGSsw==.7JpYo/SwoNDdpvw1B4RvPEfhMiIakSp/Uw8v5Y+wybU=">npm</a>是否安装成功，npm是node.js的包管理工具，用它来安装hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p>输出结果:</p>
+<p>6.13.4</p>
+<h2 id="Homebrew-安装git"><a href="#Homebrew-安装git" class="headerlink" title="Homebrew 安装git"></a><strong>Homebrew 安装git</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+
+<p>检查git是否安装成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git -v</span><br></pre></td></tr></table></figure>
+
+<p>输出结果:</p>
+<p>git version 2.24.3 (Apple Git-128)</p>
+<h2 id="使用-npm-安装-hexo"><a href="#使用-npm-安装-hexo" class="headerlink" title="使用 npm 安装 hexo"></a><strong>使用 npm 安装</strong> <strong><a target="_blank" rel="noopener" href="https://link.segmentfault.com/?enc=7K4dWAx7ixEdG55h+/Bdig==.Haidg6HubpDPmCX64OB7CmsyUovmxajpvme3nvYRCtA=">hexo</a></strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，在Desktop创建一个blog文件夹，在该文件夹下初始化我们的博客</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop &amp;&amp; <span class="built_in">mkdir</span> blog &amp;&amp; <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+
+<p>在该文件件目录下执行博客初始化操作</p>
+<p># 会下载一些node.js的依赖文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>初始化成功后，在blog目录下执行预览操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s </span><br></pre></td></tr></table></figure>
+
+<p>当看到如下输出就可以预览我们创建的博客了</p>
+<p>INFO  Validating configINFO  Start processingINFO  Hexo is running at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> . Press Ctrl+C to stop. </p>
+<p>预览效果如下</p>
+<p><img src="https://zopyyu8aab.feishu.cn/space/api/box/stream/download/asynccode/?code=MWQ0YTlhZTNkMGE4OWZkMWY2ZWVhZWViNGY5MjE2NDNfNkdZT2ZCT2xIVWFVMzBuYWRjWFVmSVdNZzZKSTkzTzBfVG9rZW46Ym94Y25nc0hMOW9pdlJNcVFWY1dRZ25XUTJiXzE2NTk4Mzc2NjY6MTY1OTg0MTI2Nl9WNA" alt="img"></p>
+<h2 id="配置客户端git-添加SSH-Key到github"><a href="#配置客户端git-添加SSH-Key到github" class="headerlink" title="配置客户端git 添加SSH Key到github"></a><strong>配置客户端git 添加SSH Key到github</strong></h2><p>如果已经配置过，该步骤可以忽略</p>
+<p>在命令行输入配置用户名和账号的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span></span><br><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&quot;email@gmail.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中 <code>username</code> 是你的用户名，<code>email@gmail.com</code>是你github的登录邮箱</p>
+<p>然后通过终端命令生成SSH Key</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;email@gmail.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果已经创建过会出现 <code>Overwrite (y/n)? n</code>提示可以输入 <code>n</code>，如果没有创建过会要求我们输入密码，然后一路回车下去就行，执行完成后会在<code>~/.ssh/id_rsa.pub</code>目录下生成 需要使用的 key。</p>
+<p>可以使用命令行输出key并复制</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>或者可以找到这个文件并打开它，复制里面的内容。</p>
+<p>登录github账号 找到 <code>setting</code></p>
+<p><img src="https://zopyyu8aab.feishu.cn/space/api/box/stream/download/asynccode/?code=OWE5ZTk1NWNhMjY5YWI4MTI2NzI1NzBmMGRjM2MzZDJfM2M3a1RYUkdKdGw1N2xUUERtckNnN044VHREYW05cG1fVG9rZW46Ym94Y25jUVRwak5OVVQwbVp1QnhONXRUdmJXXzE2NTk4Mzc2NjY6MTY1OTg0MTI2Nl9WNA" alt="img"></p>
+<p>先点击 <code>SSH and GPG keys</code> 然后再点击 <code>New SSH key </code>进入到配置 SSH Key 的页面</p>
+<p><img src="https://zopyyu8aab.feishu.cn/space/api/box/stream/download/asynccode/?code=YTM5MzI4YjgwNGIxODZiZWIwM2VjMjllMzY4ZTQzOGRfVUl4am1Qa3lpTkZkUEJ1UHVySUo3SG5qRm9aMk81aERfVG9rZW46Ym94Y25TTzdVZ2VrMTd6TTVhV3pwNm1kVmtmXzE2NTk4Mzc2NjY6MTY1OTg0MTI2Nl9WNA" alt="img"></p>
+<p>然后输入复制好的key的内容</p>
+<p><img src="https://zopyyu8aab.feishu.cn/space/api/box/stream/download/asynccode/?code=NjIwZTZkM2QyZmU0ZjY5NWJkMzU2ZjY3YTlmYTk0YWZfeGN6U1JuWWVFbVJYZE1reEh0cGl4Y0ZnaDlNN0kxRHJfVG9rZW46Ym94Y245S001b0tnR3FtcFFMeEhNaGVjOGZjXzE2NTk4Mzc2NjY6MTY1OTg0MTI2Nl9WNA" alt="img"></p>
+<p>点击 <code>Add SSH Key </code>即可</p>
+<h2 id="本地博客关联到Github主页"><a href="#本地博客关联到Github主页" class="headerlink" title="本地博客关联到Github主页"></a><strong>本地博客关联到Github主页</strong></h2><p>登录Github并且创建一个名字为 <code>username.githug.io</code> 的仓库，比如我的仓库名字为 MattTIAN<code>.github.io</code></p>
+<p>因为我已经创建过了，所以会显示红色，如果创建过，会显示绿色的，然后点击创建。切记一定要选择 <code>Public</code>，否定不能访问。</p>
+<p>然后命令行切换到本地blog目录下 <code>cd ~/Desktop/blog</code></p>
+<p>执行命令</p>
+<p>sudo npm install hexo-deployer-git –save</p>
+<p>然后开始修改配置文件 <code>~/Desktop/blog/_config.yml</code></p>
+<p>修改 <code>deploy</code>部分为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line"></span><br><span class="line">  repo: git@github.com:MattTIAN/MatthewTian.github.io.git</span><br><span class="line"></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以把博客push到github了</p>
+<p>在命令行执行</p>
+<p>#生成我们想要的博客文件</p>
+<p>hexo g#将本地的博客文件push到github</p>
+<p>hexo d</p>
+<p><code>hexo d </code>执行成功后，就可以查看我们的<a target="_blank" rel="noopener" href="https://link.segmentfault.com/?enc=+I1TclWGQZ6cplOiN/D4+w==.DwIoP6hbjB4fTwHJv7SUv8lPBmLzH2tz++KdMRbzoKE=">Blog</a>了</p>
+<h2 id="开始写博客"><a href="#开始写博客" class="headerlink" title="开始写博客"></a><strong>开始写博客</strong></h2><p>在命令行执行</p>
+<p>hexo new firstPage.md </p>
+<p>会在 <code>~/Desktop/blog/source/_post</code>目录下生成 <code>firstPage.md</code> 打开这个文件就可以开心的写博客了</p>
+<p>写完后重新执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>就可以同步博客到github</p>
+<h2 id="Todo"><a href="#Todo" class="headerlink" title="Todo"></a><strong>Todo</strong></h2><ul>
+<li>申请域名指向博客，这样就可以直接使用域名访问了</li>
+<li>hexo支持很多模板样式 可以去<a target="_blank" rel="noopener" href="https://link.segmentfault.com/?enc=aVqfoPJ4QmnrDBMILEkU2g==.HoKUqy2jWQ0b1QKmxNuXJ+lt4HSEtO2yFOiEZZfoH14=">官网</a>选择自己喜欢的使用<ul>
+<li>本文根据博主余白的教程进行魔改，<a target="_blank" rel="noopener" href="http://vipyubai.top/post/a42befc1.html">链接🔗</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="附-hexo常用命令"><a href="#附-hexo常用命令" class="headerlink" title="附 hexo常用命令"></a><strong>附 hexo常用命令</strong></h2><p>hexo n “博客名称”  &#x3D;&gt; hexo new “博客名称”   #这两个都是创建新文章，前者是简写模式</p>
+<p>hexo p  &#x3D;&gt; hexo publish</p>
+<p>hexo g  &#x3D;&gt; hexo generate  #生成</p>
+<p>hexo s  &#x3D;&gt; hexo server  #启动服务预览</p>
+<p>hexo d  &#x3D;&gt; hexo deploy  #部署  </p>
+<p>hexo server   #Hexo 会监视文件变动并自动更新，无须重启服务器。</p>
+<p>hexo server -s   #静态模式</p>
+<p>hexo server -p 5000   #更改端口</p>
+<p>hexo server -i 192.168.1.1   #自定义IP</p>
+<p>hexo clean   #清除缓存，网页正常情况下可以忽略此条命令</p>
+<p>hexo g   #生成静态网页</p>
+<p>hexo d   #开始部署</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://matttian.github.io">Matthew Tian</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://matttian.github.io/post/4a17b156.html">https://matttian.github.io/post/4a17b156.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1024/book1.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/cacc2ec6.html"><img class="prev-cover" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1024/book1.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">MySQL Frequently Used Command</div></div></a></div><div class="next-post pull-right"><a href="/post/ed318fdc.html"><img class="next-cover" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1024/book1.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Introduction</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Matthew Tian</div><div class="author-info__description">BETTER LATE THAN NEVER</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog<div class="xpand" style="height:200px;"></div></div></div><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople1.js"></script><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/zdog.dist.js"></script><script id="rendered-js" src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople.js"></script><style>.card-widget.card-announcement {
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Mac%E4%B8%8B%E4%BD%BF%E7%94%A8GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2"><span class="toc-number">1.</span> <span class="toc-text">Mac下使用GitHub+Hexo搭建个人博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Homebrew"><span class="toc-number">1.1.</span> <span class="toc-text">安装Homebrew</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Homebrew-%E5%AE%89%E8%A3%85-node-js"><span class="toc-number">1.2.</span> <span class="toc-text">Homebrew 安装 node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Homebrew-%E5%AE%89%E8%A3%85git"><span class="toc-number">1.3.</span> <span class="toc-text">Homebrew 安装git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-npm-%E5%AE%89%E8%A3%85-hexo"><span class="toc-number">1.4.</span> <span class="toc-text">使用 npm 安装 hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%AE%A2%E6%88%B7%E7%AB%AFgit-%E6%B7%BB%E5%8A%A0SSH-Key%E5%88%B0github"><span class="toc-number">1.5.</span> <span class="toc-text">配置客户端git 添加SSH Key到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E5%85%B3%E8%81%94%E5%88%B0Github%E4%B8%BB%E9%A1%B5"><span class="toc-number">1.6.</span> <span class="toc-text">本地博客关联到Github主页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2"><span class="toc-number">1.7.</span> <span class="toc-text">开始写博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Todo"><span class="toc-number">1.8.</span> <span class="toc-text">Todo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84-hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.9.</span> <span class="toc-text">附 hexo常用命令</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/cacc2ec6.html" title="MySQL Frequently Used Command">MySQL Frequently Used Command</a><time datetime="2022-08-07T11:02:55.000Z" title="Created 2022-08-07 21:02:55">2022-08-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/4a17b156.html" title="Hello World">Hello World</a><time datetime="2022-08-06T10:43:49.749Z" title="Created 2022-08-06 20:43:49">2022-08-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/ed318fdc.html" title="Introduction">Introduction</a><time datetime="2022-08-06T10:32:29.000Z" title="Created 2022-08-06 20:32:29">2022-08-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Matthew Tian</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
